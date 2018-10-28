@@ -33,6 +33,10 @@ defmodule KVstore.Mixfile do
     [
       {:plug, "~> 1.3.3"},
       {:cowboy, "~> 1.1.2"}
+      # Plug.Adapters is deprecated and 
+      # and recommend use wrapper plug_cowboy instead it       
+      # {:plug_cowboy, "~> 1.0"}. 
+      # But employer didn't recommend to use other deps :) so will use pure cowboy
     ]
   end
 end
